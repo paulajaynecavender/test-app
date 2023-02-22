@@ -49,7 +49,7 @@ function App() {
 
   return (
     <div className="App">
-      <body>
+      <div className="body">
         <h1>todo list </h1>
         <Form
           inputText={inputText}
@@ -58,7 +58,7 @@ function App() {
           setTodos={setTodos}
           setStatus={setStatus}
         />
-      </body>
+      </div>
       <ToDoList
         todos={todos}
         setTodos={setTodos}
