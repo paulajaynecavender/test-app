@@ -1,38 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: dosis, sans-serif;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+#root {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background: url(../public/ocean.jpg) no-repeat fixed center/cover;
+}
 .App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+h1 {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 4.5rem;
+  font-family: homemade apple, sans-serif;
+}
+body {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 50px 1px;
+  border-radius: 1rem;
+}
+.todo-form {
+  padding: 1rem;
+  min-width: 30rem;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input,
+select {
+  border: none;
+  padding: 1rem;
+  border-radius: 0.8rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-size: 1.5rem;
+  padding: 1rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.select {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 1rem;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.todo-input {
+  margin: 1rem;
+}
+.select {
+  padding: 1rem;
+}
+button {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+}
+.todo-button {
+  background-color: blue;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.todo-button:hover {
+  background-color: white;
+  color: blue;
+  box-shadow: 0 0 20px 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-button:active {
+  transform: scale(0.8);
+}
+
+.todo-container {
+  margin: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  min-width: 30rem;
+  box-shadow: 0 0 50px 1px;
+  border-radius: 1rem;
+}
+.todo {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  border: 1px dashed rgb(193, 193, 193);
+  padding: 0.7rem;
+  border-radius: 1rem;
+}
+.button-group {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.complete-btn {
+  background-color: green;
+  color: white;
+  margin: 0.2rem;
+}
+.complete-btn:hover {
+  background-color: white;
+  color: green;
+  box-shadow: 0 0 20px 1px;
+}
+.complete-btn:active {
+  transform: scale(0.8);
+}
+.delete-btn {
+  background-color: red;
+  color: white;
+  margin: 0.2rem;
+}
+.delete-btn:hover {
+  background-color: white;
+  color: red;
+  box-shadow: 0 0 20px 1px;
+}
+.delete-btn:active {
+  transform: scale(0.8);
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+ul {
+  list-style: none;
+}
+li {
+  font-size: 1.5rem;
 }
